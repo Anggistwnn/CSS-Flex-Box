@@ -1,0 +1,49 @@
+/* menyeleksi container */
+.container {
+
+    width: 600px;
+    height: 150px;
+    border: 5px solid black;
+    margin: 38px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* flex-wrap: wrap-reverse; */
+    /* justify-content: space-around; */
+    /* align-items: stretch; */
+
+}
+
+/* menyeleksi container yang ada didalam div */
+.container div {
+    /* width: 120px;
+    height: 120px; */
+    background-color: yellowgreen;
+    float: left;
+    margin: 2px;
+    flex: 1;
+}
+
+.container div.dua {
+    flex: 3;
+    align-self: flex-start;
+}
+
+/* .satu {
+    order: 2;
+}
+
+.dua {
+    order: 3;
+}
+
+.tiga {
+    order: 4;
+}
+
+.empat {
+    order: 1;
+} */
