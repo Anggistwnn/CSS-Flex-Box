@@ -1,4 +1,191 @@
-/* menyeleksi container */
+/* Latihan 1 */
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(216, 14, 243);
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: aliceblue;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 3;
+}
+
+/* latihan 2 */
+
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+
+}
+
+.layanan {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+
+
+.layanan.satu {
+    background-color: cadetblue;
+}
+
+.layanan.dua {
+    background-color: springgreen;
+}
+
+.layanan.tiga {
+    background-color: violet;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+
+    }
+}
+
+/* akhir latihan 2 */
+
+/* Latihan 3 - Gallery*/
+
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+
+/* Latihan 4 */
+.container-empat {
+
+    max-width: 800px;
+    margin: 50px auto;
+
+
+}
+
+.card {
+    border: 4px solid #ccc;
+    border-radius: 10px;
+    background-color: snow;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.card .header {
+    color: rgb(8, 170, 56);
+    font-size: xx-large;
+    text-align: center;
+    padding: 20px;
+    height: 100px;
+    background-color: rgb(98, 216, 118);
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    overflow: hidden;
+}
+
+
+/* responsive */
+
+@media (min-width: 600px) {
+    .container-empat {
+        display: flex;
+    }
+
+    .card.besar {
+        transform: scale(1.12);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* menyeleksi container
 .container {
 
     width: 600px;
@@ -7,30 +194,30 @@
     margin: 38px auto;
     padding: 5px;
     box-sizing: border-box;
-    display: flex;
+    display: flex; */
 
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column-reverse; */
-    /* flex-wrap: wrap-reverse; */
-    /* justify-content: space-around; */
-    /* align-items: stretch; */
+/* flex-direction: row-reverse; */
+/* flex-direction: column-reverse; */
+/* flex-wrap: wrap-reverse; */
+/* justify-content: space-around; */
+/* align-items: stretch;
 
-}
+} */
 
 /* menyeleksi container yang ada didalam div */
-.container div {
-    /* width: 120px;
+/* .container div { */
+/* width: 120px;
     height: 120px; */
-    background-color: yellowgreen;
+/* background-color: yellowgreen;
     float: left;
     margin: 3px;
     flex: 1;
-}
+} */
 
-.container div.dua {
+/* .container div.dua {
     flex: 3;
     align-self: flex-start;
-}
+} */
 
 /* .satu {
     order: 2;
@@ -46,4 +233,4 @@
 
 .empat {
     order: 1;
-} */
+}
